@@ -1,11 +1,7 @@
-import express from 'express';
-const router = express.Router();
-import app from "../app";
+import express from 'express'
 
-/* GET home page. */
-router.get('/', async function(req, res, next) {
-  const r = await app.locals.db.query('SELECT 1 + 1');
-  res.json({ title:  r.recordset});
-});
+import userRouter from './users'
+const router = express.Router()
 
-export default router;
+router.use('/users', userRouter)
+export default router

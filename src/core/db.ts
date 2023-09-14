@@ -2,10 +2,10 @@ import mssql, {config} from 'mssql';
 
 const sqlConfig: config = {
     user: 'sa',
-    password: '@Securepassword#',
+    password: '@Securepassword!',
     database: 'db_0',
     server: 'localhost',
-    port: 1433,
+    port: 14332,
     pool: {
         max: 10,
         min: 0,
