@@ -1,5 +1,5 @@
-import debug from "debug";
+import debug from 'debug'
 
 debug.debug('db-syncer:server')
 
-export default debug;
+export default debug
